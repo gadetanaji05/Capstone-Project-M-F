@@ -34,3 +34,8 @@ print(df.duplicated().sum())
 df.to_csv(r"Data\Processed\nav_history_cleaned.csv", index=False)
 
 print("\nCleaned file saved successfully!")
+
+
+x = pd.read_csv(r"Data\Processed\nav_history_cleaned.csv")
+
+print(x.dtypes)
